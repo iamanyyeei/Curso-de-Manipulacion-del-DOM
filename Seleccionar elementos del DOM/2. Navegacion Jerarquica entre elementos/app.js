@@ -8,17 +8,40 @@ console.log("parent");
 const children = parent.children;
 console.log(children);
 
+//Trae un objeto con todos los nodos de los HIJOS del elemento PADRE, incluidos los saltos de línea, a los que se les denomina #text
+const childNodes = parent.childNodes;
+console.log(childNodes);
+
+//Sirve para traer el primer nodo del primer HIJO LI
+const children2 = parent.firstChild;
+console.log(children2);
+
 //Llegar al PRIMER HIJO
 const firstChild = parent.firstElementChild;
 console.log(firstChild);
+
+//Trae al ÚLTIMO nodo de los HIJOS del elemento PADRE
+const lastChild2 = parent.lastChild;
+console.log(lastChild2);
 
 //Legar al ÚLTIMO HIJO
 const lastChild = parent.lastElementChild;
 console.log(lastChild);
 
+
+/*  NAVEGAR ENTRE HERMANOS */
+
+//Trae al nodo anterior del elemento HERMANO del padre
+const previousSibling2 = parent.previousSibling;
+console.log(previousSibling2);
+
 //Legar al elemento ANTES del padre, es decir,su hermano
 const previousSibling = parent.previousElementSibling;
 console.log(previousSibling);
+
+//Llegar al nodo del elemento HERMANO, es decir, DESPUÉS del padre
+const nextSibling2 = parent.nextSibling;
+console.log(nextSibling2);
 
 //Llegar al elemento DESPUÉS del padre, es decir, también su hermano pero después de este
 const nextSibling = parent.nextElementSibling;
@@ -26,18 +49,13 @@ console.log(nextSibling);
 
 //OTROS MÉTODOS PARA SELECCIONAR DE PADRES A HIJOS
 
-// children; // live HTMLCollection
-// childNodes; // live NodeList
-// firstChild; // live NodeList
-// firstElementChild; // non-live HTMLCollection
-// lastChild; // live NodeList
-// lastElementChild; // non-live HTMLCollection
-// previousSibling; // live NodeList
-// previousElementSibling; // non-live HTMLCollection
+// children; // live HTMLCollection -----APRENDIDO EN CLASES4
+// childNodes; // live NodeList  -----INVESTIGACIÓN PERSONAL
+// firstChild; // live NodeList -----INVESTIGACIÓN PERSONAL
+// firstElementChild; // non-live HTMLCollection -----APRENDIDO EN CLASES
+// lastChild; // live NodeList -----INVESTIGACIÓN PERSONAL
+// lastElementChild; // non-live HTMLCollection -----APRENDIDO EN CLASES
+// previousSibling; // live NodeList -----INVESTIGACIÓN PERSONAL
+// previousElementSibling; // non-live HTMLCollection -----APRENDIDO EN CLASES
 // nextSibling; // live NodeList
-// nextElementSibling; // non-live HTMLCollection
-
-
-//Trae un objeto con una lista de los nodos de los HIJOS del elemento PADRE, incluidos los saltos de línea, a los que se les denomina #text
-const childNodes = parent.childNodes;
-console.log(childNodes);
+// nextElementSibling; // non-live HTMLCollection -----APRENDIDO EN CLASES
