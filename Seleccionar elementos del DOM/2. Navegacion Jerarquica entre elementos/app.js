@@ -1,4 +1,5 @@
-/*  NAVEGAR DE PADRES A HIJOS*/
+console.log("-----NAVEGAR DE PADRES A HIJOS-----");
+/*  NAVEGAR DE PADRES A HIJOS  */
 
 //Buscar al padre, en este caso una etiqueta UL
 const parent = document.getElementById("parent");
@@ -29,7 +30,8 @@ const lastChild = parent.lastElementChild;
 console.log(lastChild);
 
 
-/*  NAVEGAR ENTRE HERMANOS */
+console.log("-----NAVEGAR ENTRE HERMANOS-----");
+/*  NAVEGAR ENTRE HERMANOS  */
 
 //Trae al nodo anterior del elemento HERMANO del padre
 const previousSibling2 = parent.previousSibling;
@@ -59,3 +61,25 @@ console.log(nextSibling);
 // previousElementSibling; // non-live HTMLCollection -----APRENDIDO EN CLASES
 // nextSibling; // live NodeList
 // nextElementSibling; // non-live HTMLCollection -----APRENDIDO EN CLASES
+
+
+console.log("-----NAVEGAR DE HIJOS A PADRES-----");
+/*  NAVEGAR DE HIJOS A PADRES  */
+
+//Este es el elemento HIJO a artir del cual vamos a navegar
+const hijo = document.querySelector("li");
+console.log(hijo);
+
+//Traer al node (PADRE) del hijo
+const parent2 = hijo.parentNode;
+console.log(parent2);
+
+//Trae al elemento PADRE
+const elementoPadre = hijo.parentElement;
+console.log(elementoPadre);
+
+//Trae al elemento ABUELO más cercano, que se le indique. Es decir, el padre del elemento PADRE
+
+//Es el mmétodo MÁS UTILIZADO
+const grandParent = hijo.closest("menu");
+console.log(grandParent);
