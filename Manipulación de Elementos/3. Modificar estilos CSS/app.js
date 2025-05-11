@@ -21,3 +21,13 @@ menu.style.fontSize = "2rem";
 
 //Sustituye la clase .menu por .main-menu que coloca el texto en color verde
 menu.className = "main-menu";
+
+
+// ----- MÉTODO NRO 2 .CLASSLIST ------
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+    //Al dar click al botón el menu desaparece
+    menu.classList.toggle("invisible");
+});
